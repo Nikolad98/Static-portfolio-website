@@ -56,7 +56,7 @@ header{
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: rgb(51, 51, 51);
+   background-color: rgb(60, 140, 200);
    position: absolute;
    left: 0;
    transition: left 0.5s;
@@ -113,7 +113,7 @@ header{
     font-size: 0.8rem;
     font-weight: 400;
 }
-.first-section-content button{
+.first-section-content a{
     margin-top: 40px;
     height: 40px;
     width: 130px;
@@ -122,8 +122,10 @@ header{
     cursor: pointer;
     background-color: rgb(60, 140, 200);
     color: white;
+    line-height: 40px;
+    text-align: center;
 }
-.first-section-content button:hover{
+.first-section-content a:hover{
     transform: scale(1.05);
 }
 .first-section-portret{
@@ -216,6 +218,33 @@ header{
     justify-content: space-between;
     margin: 0 auto;
 }
+.project .project-inf{
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.3s linear
+}
+.project:hover .project-inf{
+    height: 100px;
+    visibility: visible;
+}
+.project .project-inf h1{
+    font-size: 16px;
+    font-family: cursive;
+    cursor: pointer;
+    color: black;
+    opacity: 0;
+    transition: 0.3s;
+}
+.project:hover .project-inf h1{
+    opacity: 1;
+}
 .projects .project:nth-child(2){
     padding: 5px 0;
 }
@@ -245,6 +274,10 @@ footer{
 .icon{
     font-size: 25px;
     color: white;
+    cursor: pointer;
+}
+.icon:hover{
+    transform: scale(1.2);
 }
 
 /*-- END OF FOOTER --*/
