@@ -9,7 +9,21 @@
     <script src="app.js" defer></script>
 </head>
 <body>
-    <section class="first-section container">
+    <header>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="navbar hidden">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="first-section container" id="home">
         <div class="first-section-content">
             <h2>Hello I'm</h2>
             <h1>Harry Maguire</h1>
@@ -18,7 +32,7 @@
         </div>
         <div class="first-section-portret"></div>
     </section>
-    <section class="second-section container">
+    <section class="second-section container" id="about">
         <h1>About Me</h1>
         <div class="second-section-content">
             <div class="about-me-text">
@@ -31,7 +45,7 @@
             <div class="about-me-img"></div>
         </div>
     </section>
-    <section class="third-section container">
+    <section class="third-section container" id="projects">
         <h1>Projects</h1>
         <div class="projects">
             <div class="project">
