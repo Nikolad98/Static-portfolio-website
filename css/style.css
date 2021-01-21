@@ -170,10 +170,12 @@ header{
     margin: 0 auto;
     overflow: scroll;
 }
-.about-me-text h1{
+.about-me-text > h1{
     font-size: 15px;
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin-bottom: 10px;
 }
 .about-me-text p{
     font-size: 13px;
@@ -183,7 +185,7 @@ header{
     height: 50%;
     width: 90%;
     margin: 0 auto;
-    background-image: url('./assets/profile-img2.jpg');
+    background-image: url('./assets/profile-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -319,6 +321,7 @@ footer{
     .navbar ul{
         height: 100%;
         width: 70%;
+        max-width: 700px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -357,6 +360,111 @@ footer{
     }
     .projects .project:nth-child(2){
         padding: 0 10px;
+    }
+}
+@media all and (min-width: 1024px){
+    .first-section-content{
+        margin-top: 0;
+        height: 80%;
+    }
+    .first-section-portret{
+        margin-bottom: 0;
+        height: 80%;
+        background-position: top left;
+    }
+    .first-section-content h2 {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    .first-section-content h1{
+        font-size: 2.3rem;
+        font-weight: 400;
+        margin-left: -2px;
+    }
+    .first-section-content p{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    .second-section > h1{
+        font-size: 30px;
+    }
+    .about-me-text > h1{
+        font-size: 18px;
+    }
+    .about-me-text p{
+        font-size: 15px;
+    }
+    .third-section > h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    footer{
+        height: 200px;
+    }
+    .icons{
+        width: 40%;
+        max-width: 300px;
+    }
+    .icon{
+        font-size: 35px;
+    }
+}
+@media all and (min-width: 1440px){
+    .navbar ul li a{
+        font-size: 28px;
+    }
+    .first-section-content h2 {
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+    .first-section-content h1{
+        font-size: 3rem;
+        font-weight: 400;
+        margin-left: -2px;
+    }
+    .first-section-content p{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .second-section{
+        max-width: 2000px;
+    }
+    .second-section > h1{
+        font-size: 50px;
+    }
+    .about-me-text > h1{
+        font-size: 25px;
+    }
+    .about-me-text p{
+        font-size: 22px;
+    }
+    .third-section{
+        height: 700px;
+        width: 90%;
+        max-width: 2000px;
+    }
+    .third-section > h1{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .projects{
+        height: 400px;
+    }
+    .projects .project:nth-child(2){
+        padding: 0 30px;
+    }
+    .project:hover .project-inf{
+        height: 200px;
+    }
+    .project .project-inf h1{
+        font-size: 25px;
+    }
+    .icons{
+        width: 40%;
+        max-width: 400px;
+    }
+    .icon{
+        font-size: 45px;
     }
 }
 
